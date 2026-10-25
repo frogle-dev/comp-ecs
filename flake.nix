@@ -32,7 +32,7 @@
         zls = zls-overlay.packages.${system}.zls;
       in
       {
-        devShells.${system}.default = pkgs.mkShell {
+        devShell = pkgs.mkShell {
           nativeBuildInputs = [
             zig
             zls
